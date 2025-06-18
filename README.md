@@ -1,6 +1,6 @@
 # 🎵 SpotLite
 
-YouTube 시연 영상 링크: https://youtu.be/-Q8KpIiFNro?si=Z-2JM6itFMN7_UXU
+YouTube 시연 영상 링크: https://youtu.be/2UOrAP0O83Q?si=myCRMrchzZ_I9LYK
 
 **SpotLite**는 Spotify API와 Firebase를 활용한 **iOS 음악 검색 앱**입니다.  
 사용자는 실시간으로 음악을 검색하고 각 트랙의 **앨범 이미지, 아티스트, 댓글**을 확인할 수 있습니다.  
@@ -30,6 +30,6 @@ YouTube 시연 영상 링크: https://youtu.be/-Q8KpIiFNro?si=Z-2JM6itFMN7_UXU
 
 ---
 
-![IMG_1523](https://github.com/user-attachments/assets/5c57534b-1f75-45bf-aa96-1e5c7ce1468e)
+![IMG_1531](https://github.com/user-attachments/assets/889d8487-7a88-4eae-b2d3-211e79f163bf)
 ![IMG_1525](https://github.com/user-attachments/assets/461b8baf-7f62-438c-8600-ceff08046121)
 ![IMG_1524](https://github.com/user-attachments/assets/e8569205-a16a-4e42-8dcc-039d8cd584eb)
