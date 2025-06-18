@@ -1,0 +1,114 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 그라디언트 정의 -->
+    <radialGradient id="backgroundGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#191414;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A855F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6D28D9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+      <stop offset="50%" style="stop-color:rgba(255,255,255,0.3);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0);stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- 애니메이션 정의 -->
+    <style>
+      .pulse {
+        animation: pulse 2s ease-in-out infinite;
+      }
+      
+      .rotate {
+        animation: rotate 20s linear infinite;
+        transform-origin: center;
+      }
+      
+      .wave1 {
+        animation: wave 3s ease-in-out infinite;
+      }
+      
+      .wave2 {
+        animation: wave 3s ease-in-out infinite 1s;
+      }
+      
+      .wave3 {
+        animation: wave 3s ease-in-out infinite 2s;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+      
+      @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      
+      @keyframes wave {
+        0% { opacity: 0; transform: scale(0.8); }
+        50% { opacity: 0.6; }
+        100% { opacity: 0; transform: scale(1.2); }
+      }
+    </style>
+  </defs>
+  
+
+  <!-- 사운드 웨이브 효과 -->
+  <circle cx="200" cy="200" r="120" fill="none" stroke="rgba(139,92,246,0.3)" stroke-width="2" class="wave1"/>
+  <circle cx="200" cy="200" r="140" fill="none" stroke="rgba(139,92,246,0.2)" stroke-width="2" class="wave2"/>
+  <circle cx="200" cy="200" r="160" fill="none" stroke="rgba(139,92,246,0.1)" stroke-width="2" class="wave3"/>
+  
+  <!-- 메인 로고 원형 -->
+  <circle cx="200" cy="200" r="80" fill="url(#logoGrad)" class="pulse"/>
+  
+  <!-- 광택 효과 -->
+  <ellipse cx="180" cy="180" rx="30" ry="60" fill="url(#shineGrad)" opacity="0.5" transform="rotate(-45 180 180)"/>
+  
+  <!-- 음악 아이콘 (헤드폰) -->
+  <g transform="translate(200,200)">
+    <!-- 헤드밴드 -->
+    <path d="M -30,-20 Q 0,-40 30,-20" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+    
+    <!-- 왼쪽 이어패드 -->
+    <rect x="-35" y="-15" width="12" height="20" rx="6" fill="white"/>
+          <rect x="-32" y="-12" width="6" height="14" rx="3" fill="#8B5CF6"/>
+    
+    <!-- 오른쪽 이어패드 -->
+    <rect x="23" y="-15" width="12" height="20" rx="6" fill="white"/>
+          <rect x="26" y="-12" width="6" height="14" rx="3" fill="#8B5CF6"/>
+    
+    <!-- 음파 표시 -->
+    <g opacity="0.8">
+      <path d="M -8,15 Q 0,10 8,15" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M -12,22 Q 0,15 12,22" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M -16,29 Q 0,20 16,29" stroke="white" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- 플로팅 음표들과 하트들 -->
+  <g class="rotate">
+    <text x="120" y="120" font-family="Arial" font-size="24" fill="rgba(139,92,246,0.4)">♪</text>
+    <text x="300" y="150" font-family="Arial" font-size="20" fill="rgba(139,92,246,0.3)">♫</text>
+    <text x="280" y="280" font-family="Arial" font-size="22" fill="rgba(139,92,246,0.4)">♪</text>
+    <text x="100" y="300" font-family="Arial" font-size="18" fill="rgba(139,92,246,0.3)">♬</text>
+    
+    <!-- 하트들 -->
+    <g fill="rgba(139,92,246,0.5)">
+      <path d="M 140 80 C 135 75, 125 75, 125 85 C 125 75, 115 75, 110 80 C 110 85, 125 100, 125 100 S 140 85, 140 80 Z" transform="scale(0.5)"/>
+      <path d="M 320 250 C 315 245, 305 245, 305 255 C 305 245, 295 245, 290 250 C 290 255, 305 270, 305 270 S 320 255, 320 250 Z" transform="scale(0.4)"/>
+    </g>
+  </g>
+  
+  <!-- 앱 이름 -->
+  <text x="200" y="320" text-anchor="middle" font-family="Gothic, sans-serif" font-size="48" font-weight="bold" font-style="normal" fill="white">
+    SpotLite
+  </text>
+
+</svg>
